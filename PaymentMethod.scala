@@ -1,6 +1,6 @@
 object PaymentMethod {
 
-
+	// case matching function based on method choosed by customer.
 	def Cal(amt:Int,method:String) = method match {
 		case "Paytm" | "Freecharge" => print(s"amount to be paid:${amt + (2*amt)/100}")
 
